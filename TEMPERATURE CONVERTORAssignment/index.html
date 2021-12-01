@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="body">
+    <h1 class="head">TEMPERATURE CALCULATOR</h1>
+
+    <div id="wrapperDiv" class="main">
+      <div id="box1" style="padding: 20px; float: left">
+        <p>Convert Fahrenheit degrees to Celsius</p>
+        <div class="submit">
+          <div style="float: left">
+            <form action="" id="toCelsius" onsubmit="return false;">
+              <div>
+                <input class="inputs" type="text" id="degFahren" value="" />
+              </div>
+              <div class="submit">
+                <input
+                  class="btn"
+                  type="submit"
+                  value="Submit"
+                  onclick="convertCelsius()"
+                />
+              </div>
+              <div class="button">
+                <button class="btn w-100 btn-dark" onclick="clearSum()">
+                  clear
+                </button>
+              </div>
+              <p class="box" id="resultCelsius"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="div2" style="padding: 20px; float: right">
+        <p>Convert Celsius degrees to Fahrenheit</p>
+        <div class="submit">
+          <div style="float: left">
+            <form action="" id="toFahrenheit" onsubmit="return false;">
+              <div>
+                <input class="inputs" type="text" id="degCelsius" value="" />
+              </div>
+              <div class="submit">
+                <input
+                  class="btn"
+                  type="submit"
+                  value="Submit"
+                  onclick="convertFahrenheit()"
+                />
+              </div>
+              <div class="button">
+                <button class="btn w-100 btn primary" onclick="clearWords()">
+                  clear
+                </button>
+              </div>
+
+              <p class="box" id="resultFahren"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
